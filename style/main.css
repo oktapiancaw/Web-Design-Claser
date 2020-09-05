@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;700&display=swap');
+
+:root {
+    --primary: #0071BC;
+    --d-primary: #004471;
+    --l-primary: #008AC1;
+    --black: #1D1D1D;
+    --white: #FFFFFF;
+}
+
+* {
+    font-family: Heebo;
+
+    /* use if you dont have an access to internet */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--d-primary);
+}
+
+::placeholder {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: -webkit-linear-gradient(var(--primary), var(--l-primary));
+}
+
+.container {
+    position: relative;
+    width: 414px;
+    height: 736px;
+    border-radius: 30px;
+
+    /* Display Size */
+    transform: scale(0.7);
+
+    box-shadow: 6px 10px 12px rgba(0, 0, 0, 0.2);
+    background: var(--white);
+    box-sizing: border-box;
+    padding: 19px 47px;
+}
+
+.container nav {
+    position: relative;
+    height: 20px;
+}
+
+.container nav .close-btn {
+    position: absolute;
+    width: 20px;
+    right: -28px;
+}
+
+.container .img-box {
+    text-align: center;
+    margin: 16px 0 22px 0;
+}
+
+.container .img-box img.login {
+    width: 204px;
+}
+
+.container .img-box img.register {
+    width: 178px;
+}
+
+.container .form-group .input-group {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.container .form-group .input-group:nth-child(4) {
+    margin: 10px 0 5px;
+}
+
+.container .form-group .input-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.container .form-group .input-group input {
+    width: calc(100% - 20px);
+    height: 30px;
+    padding: 3px 10px;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 6px;
+    border: 1px solid #707070;
+    outline: none;
+    transition: 500ms
+}
+
+.container .form-group .input-group input:hover,
+.container .form-group .input-group input:focus,
+.container .form-group .input-group button:hover {
+    box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container .form-group #forgot {
+    text-align: right;
+    font-weight: 500;
+    margin: 10px 0 5px;
+}
+
+.container .form-group .input-group button {
+    width: 100%;
+    height: 36px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: var(--primary);
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 500ms
+}
+
+.container .form-group .input-group .double-pass {
+    display: flex;
+}
+
+.container .form-group .input-group .double-pass input:last-child {
+    margin-left: 10px;
+}
+
+.container .form-group hr {
+    width: 100px;
+    margin: 10px auto;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+}
+
+.container .form-group p {
+    color: var(--d-primary);
+}
+
+.container .form-group p a {
+    font-weight: 700;
+}
